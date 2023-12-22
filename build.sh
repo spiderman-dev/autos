@@ -5,7 +5,7 @@ set -o errexit
 
 pip install -r requirements.txt
 python manage.py collectstatic --no-input
-python manage.py createsuperuser --no-input --username=dos --email=jheralf09@gmail.com --password=JAHA0109
+python manage.py shell -c "from django.contrib.auth.models import User; User.objects.create_superuser('admin1', 'jheralf09@gmail.com', 'adminpass')"
 
 
 python manage.py migrate
