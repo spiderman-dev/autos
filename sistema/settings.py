@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-es'
 
-TIME_ZONE = 'America\Caracas'
+TIME_ZONE = 'UTC-4'
 
 USE_I18N = True
 
